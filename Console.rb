@@ -3,12 +3,6 @@ require "io/console"
 print("
   Enter User: ")
 user_name = gets.chomp()
-File.open("CDc10/Connections/temp/user.txt", "w+") do |file|
-  file.write(user_name)
-end
-File.open("CDc10/Connections/temp/user.txt", "r+") do |file|
-  file.write("user_name = #{user_name}")
-end
 
 token_data = File.open("CDc10/lib/tokens.env/token-console.env")
 token = token_data.read
