@@ -1,5 +1,12 @@
 require "io/console"
 
+print("
+  Enter User: ")
+user_name = gets.chomp()
+File.open("CDc10/temp/user.txt", "w+") do |file|
+  file.write(user_name)
+end
+
 token_data = File.open("CDc10/lib/tokens.env/token-console.env")
 token = token_data.read
 token = token.strip
@@ -31,7 +38,7 @@ while counter != trash_count
 end
 puts(".")
 require_relative "CDc10/Connections/fuse-loader.rb"
-  require_relative "CDc10/StartUP.new()/loader.rb"
+  require_relative "CDc10/loader.rb"
 else
   puts("
   Incorrect LSC")
