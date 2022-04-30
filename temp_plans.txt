@@ -1,0 +1,7 @@
+## Plans for Lang creation:
+ brief : there will 4 types of code languages
+  1. Single letter ex[a, x ,r ,0 ,2 etc]
+  2. Double letter ex[ab, fd, sa, ex, gt etc]
+  3. Double Digit ex[12, 32, 51, 87 etc]
+  4. Mix(2 characters) ex[a3, 6g, h2 etc]
+  
